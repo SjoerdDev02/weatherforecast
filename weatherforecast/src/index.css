@@ -11,16 +11,3 @@
     --dark-blue-glass: rgba(0, 0, 50, 0.5);
     --light-purple: #6464C8;
 }
-
-.btn {
-    background-color: var(--light-purple);
-    color: var(--white);
-    padding: 1rem;
-    border-radius: 10px;
-}
-
-.glass {
-    background-color: var(--dark-blue-glass);
-    backdrop-filter: blur(5px);
-    border-radius: 10px;
-}

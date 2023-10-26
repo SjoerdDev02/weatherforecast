@@ -1,0 +1,6 @@
+.btn {
+    background-color: var(--light-purple);
+    color: var(--white);
+    padding: 1rem;
+    border-radius: 10px;
+}
