@@ -1,0 +1,28 @@
+.nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--dark-blue-glass);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 20px;
+    box-shadow: 10px 5px 15px rgba(0, 0, 0, 0.4);
+    padding: 1rem;
+    margin: 2rem 0;
+}
+
+.navItem {
+    padding: 0.5rem;
+}
+
+.navItem.active {
+    background: var(--white);
+}
+
+@media screen and (min-width: 1024px) {
+    .nav {
+        flex-direction: column;
+        justify-content: center;
+        margin: 0rem 2rem;
+    }
+}

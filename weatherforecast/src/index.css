@@ -2,12 +2,19 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
 }
 
 :root {
     --white: #FFFFFF;
     --dark-white: #C8C8C8;
     --dark-blue: #000032;
-    --dark-blue-glass: rgba(0, 0, 50, 0.5);
-    --light-purple: #6464C8;
+    --dark-blue-glass: rgba(0, 0, 50, 0.2);
+    --purple: #1919C8;
+    --light-purple: #3333ff;
+}
+
+body {
+    width: 100vw;
+    min-height: 100vh;
 }

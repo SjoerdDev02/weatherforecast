@@ -1,0 +1,17 @@
+.background {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: var(--backgroundImg-phone);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+@media screen and (min-width: 1024px) {
+    .background {
+        background-image: var(--backgroundImg-desktop);
+    }
+}

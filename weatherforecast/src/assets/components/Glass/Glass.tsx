@@ -1,8 +1,10 @@
 import styles from './Glass.module.css';
 
-const Glass = ({ children }) => {
+const Glass = ({ children, customStyles }: { children: React.ReactNode, customStyles?: React.CSSProperties }) => {
+
+
   return (
-    <div className={styles.glass}>{children}</div>
+    <div className={styles.glass} style={{ ...customStyles }}>{children}</div>
   );
 }
 
