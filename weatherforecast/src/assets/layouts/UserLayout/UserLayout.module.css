@@ -2,6 +2,7 @@
     width: 100%;
     min-height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-image: var(--backgroundImg-phone);
@@ -12,6 +13,8 @@
 
 @media screen and (min-width: 1024px) {
     .background {
+        height: 100vh;
+        flex-direction: row;
         background-image: var(--backgroundImg-desktop);
     }
 }

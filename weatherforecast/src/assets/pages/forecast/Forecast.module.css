@@ -1,0 +1,327 @@
+.forecastContainer {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.forecastHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 0.5rem;
+    width: 100%;
+}
+
+.headerNameDate {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+}
+
+.locationSwitchContainer {
+    background-color: var(--white);
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 0.5rem;
+    color: var(--dark-blue);
+}
+
+.locationSwitchContainer button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.todayContainer {
+    background: linear-gradient(to right, rgba(0, 150, 200, 0.75), rgba(0, 175, 225, 1));
+    box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.75);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    border-radius: 20px;
+    padding: 0.5rem;
+    width: 100%;
+}
+
+.todayHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    color: var(--white);
+    width: 100%;
+}
+
+.todayHeader div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.todayHeader img {
+    width: 10%;
+}
+
+.todayNumbers {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+    text-align: center;
+    color: var(--white);
+    width: 100%;
+}
+
+.todayHourContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+    width: 100%;
+}
+
+.todayHourContainer div {
+    background-color: var(--white);
+    box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.75);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.5rem 0;
+}
+
+.todayHourContainer img {
+    width: 50%;
+}
+
+.nextDaysContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+    color: var(--white);
+    width: 100%;
+}
+
+.nextDay {
+    background-color: var(--dark-blue);
+    box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.75);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.5rem 0;
+    width: 100%;
+}
+
+.divider {
+    width: 80%;
+    border: 1px solid var(--white);
+}
+
+.nextDay img {
+    width: 50%;
+    margin: 0.5rem 0;
+}
+
+.thermometer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.thermometer div:first-child {
+    width: 0.2rem;
+    height: 4rem;
+    background: linear-gradient(to bottom, rgb(20, 200, 50), rgb(200, 150, 0), rgb(255, 0, 0));
+}
+
+.thermometer div:last-child {
+    height: 4rem;
+    margin-left: 0.3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.detailNumbersContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+}
+
+.detailComponentOne, .detailComponentTwo {
+    background-color: var(--dark-blue);
+    box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.75);
+    border-radius: 20px;
+    color: var(--white);
+    padding: 1rem;
+    width: 100%;
+}
+
+.detailComponentOne {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.detailComponentOne header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.detailComponentOne header div {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.detailComponentOne > img {
+    max-width: 100%;
+}
+
+.detailComponentTwo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.detailContent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.detailContent div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.detailComponentTwo > img {
+    width: 25%;
+}
+
+.forecastMapContainer {
+    background-color: var(--dark-blue);
+    box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.75);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 0.5rem;
+    color: var(--white);
+    width: 100%;
+    padding: 1rem;
+}
+
+.forecastMapContainer header {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.forecastMapContainer > img {
+    width: 75%;
+}
+
+@media screen and (min-width: 1024px) {
+    .forecastContainer {
+        height: 90vh;
+        display: grid;
+        grid-template-areas:
+            "forecastHeader forecastHeader forecastHeader forecastHeader forecastHeader forecastHeader forecastHeader forecastHeader"
+            "today today today today nextDay nextDay nextDay nextDay"
+            "forecastDetails forecastDetails forecastDetails forecastDetails forecastDetails forecastDetails forecastMap forecastMap";
+    }
+
+    .forecastHeader {
+        flex-direction: row;
+        justify-content: space-between;
+        grid-area: forecastHeader;
+    }
+
+    .forecastProfileContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .headerNameDate {
+        align-items: flex-start;
+    }
+
+    .todayContainer {
+        height: 80%;
+        padding: 1rem;
+        grid-area: today;
+    }
+
+    .todayHeader {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .todayNumbers {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .todayHourContainer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nextDaysContainer {
+        height: 80%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        grid-area: nextDay;
+    }
+
+    .nextDay {
+        height: 100%;
+    }
+
+    .detailComponentOne, .detailComponentTwo {
+        height: 100%;
+    }
+
+    .detailNumbersContainer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-area: forecastDetails;
+    }
+
+    .forecastMapContainer {
+        height: 80%;
+        grid-area: forecastMap;
+    }
+}
