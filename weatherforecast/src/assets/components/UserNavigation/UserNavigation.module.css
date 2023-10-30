@@ -28,7 +28,7 @@
     border-radius: 50%;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
     .nav {
         width: auto;
         min-height: 30vh;
