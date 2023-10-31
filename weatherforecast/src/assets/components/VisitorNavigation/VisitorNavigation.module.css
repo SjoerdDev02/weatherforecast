@@ -42,12 +42,12 @@
 
 .navItem:hover {
     box-shadow: inset 100px 0 0 0 var(--white);
-    color: var(--light-purple);
+    color: var(--dark-blue);
 }
 
 .navItem.active {
     box-shadow: inset 100px 0 0 0 var(--white);
-    color: var(--purple);
+    color: var(--dark-blue);
 }
 
 @media screen and (min-width: 1024px) {

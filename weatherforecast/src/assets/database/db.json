@@ -1,0 +1,30 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "picture": "/icons/overig/profile-john.png",
+      "email": "sjoerd.kessels2002@gmail.com",
+      "firstName": "Sjoerd",
+      "lastName": "Kessels",
+      "password": "SjaakieDev",
+      "temperature": "Celcius",
+      "mode": "Darkmode",
+      "cityOne": "Maastricht",
+      "cityTwo": "'s-Hertogenbosch",
+      "cityThree": "Middelburg"
+    },
+    {
+      "id": 2,
+      "picture": "/icons/overig/user.svg",
+      "email": "henk@gmail.com",
+      "firstName": "Henk",
+      "lastName": "Jah",
+      "password": "Henk12",
+      "temperature": "Celcius",
+      "mode": "Darkmode",
+      "cityOne": "Maastricht",
+      "cityTwo": "'s-Hertogenbosch",
+      "cityThree": "Middelburg"
+    }
+  ]
+}

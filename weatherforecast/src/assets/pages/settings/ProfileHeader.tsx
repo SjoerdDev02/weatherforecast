@@ -4,7 +4,7 @@ const ProfileHeader = () => {
   return (
     <header className={styles.profileHeader}>
         <img src='/icons/overig/profile-john.png' alt='profile picture' />
-        <h1>John's Settings</h1>
+        <h1>John's Preferences</h1>
     </header>
   );
 }

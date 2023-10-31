@@ -17,6 +17,16 @@
     width: 100%;
 }
 
+.forecastProfileContainer {
+    gap: 1rem;
+}
+
+.forecastProfileContainer img {
+    padding: 0.5rem;
+    background-color: var(--dark-blue);
+    border-radius: 50%;
+}
+
 .headerNameDate {
     display: flex;
     flex-direction: column;
@@ -185,6 +195,10 @@
     justify-content: space-between;
 }
 
+.detailComponentOne > :nth-of-type(1) {
+    margin: 0.5rem 0;
+}
+
 .detailComponentOne header {
     display: flex;
     justify-content: space-between;
@@ -195,10 +209,6 @@
     display: flex;
     align-items: center;
     gap: 0.5rem;
-}
-
-.detailComponentOne > img {
-    max-width: 100%;
 }
 
 .detailComponentTwo {
@@ -212,6 +222,7 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
+    gap: 0.5rem;
 }
 
 .detailContent div {
@@ -219,10 +230,6 @@
     flex-direction: row;
     align-items: center;
     gap: 0.5rem;
-}
-
-.detailComponentTwo > img {
-    width: 25%;
 }
 
 .forecastMapContainer {
@@ -245,7 +252,8 @@
     gap: 0.5rem;
 }
 
-.forecastMapContainer > img {
+#map {
+    height: 100px;
     width: 75%;
 }
 
@@ -253,11 +261,11 @@
     .forecastContainer {
         height: 90vh;
         display: grid;
-        /* grid-template-columns: repeat(8, 1fr); Geef aan hoeveel kolommen er zijn en hun grootte */
-        /* grid-template-rows: 10vh 30vh 30vh; */
+        grid-template-columns: repeat(8, 1fr);
+        /* grid-template-rows: 20vh 30vh 30vh; */
         grid-template-areas:
             "forecastHeader forecastHeader forecastHeader forecastHeader forecastHeader forecastHeader forecastHeader forecastHeader"
-            "today today today today nextDay nextDay nextDay nextDay"
+            "today today today today today nextDay nextDay nextDay"
             "forecastDetails forecastDetails forecastDetails forecastDetails forecastDetails forecastDetails forecastMap forecastMap";
     }
 
