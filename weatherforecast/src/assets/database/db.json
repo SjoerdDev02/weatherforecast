@@ -2,29 +2,16 @@
   "users": [
     {
       "id": 1,
-      "picture": "/icons/overig/profile-john.png",
+      "picture": "blob:http://localhost:5173/34fe0f43-9023-4ba2-b9f3-b73cc8da07ce",
       "email": "sjoerd.kessels2002@gmail.com",
       "firstName": "Sjoerd",
       "lastName": "Kessels",
-      "password": "SjaakieDev",
-      "temperature": "Celcius",
+      "password": "Sjoerdjeeh",
+      "temperature": "°F - Fahrenheit",
       "mode": "Darkmode",
       "cityOne": "Maastricht",
-      "cityTwo": "'s-Hertogenbosch",
-      "cityThree": "Middelburg"
-    },
-    {
-      "id": 2,
-      "picture": "/icons/overig/user.svg",
-      "email": "henk@gmail.com",
-      "firstName": "Henk",
-      "lastName": "Jah",
-      "password": "Henk12",
-      "temperature": "Celcius",
-      "mode": "Darkmode",
-      "cityOne": "Maastricht",
-      "cityTwo": "'s-Hertogenbosch",
-      "cityThree": "Middelburg"
+      "cityTwo": "Utrecht",
+      "cityThree": "Den Haag"
     }
   ]
 }

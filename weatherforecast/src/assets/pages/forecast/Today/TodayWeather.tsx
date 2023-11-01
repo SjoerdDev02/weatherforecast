@@ -9,7 +9,7 @@ type TodayWeatherProps = {
   location: string;
   temperature: number;
   humidity: number;
-  rainProb: number[];
+  rainProb: number;
   appTemp: number;
   visibility: number[];
   hourWeather: number[];
@@ -171,7 +171,7 @@ const TodayWeather: React.FC<TodayWeatherProps> = ({
       />
       <TodayNumbers
         weather={weather}
-        rainProb={rainProb[hour + 1]}
+        rainProb={rainProb}
         appTemp={appTemp}
         visibility={visibility[hour + 1]}
       />

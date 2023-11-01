@@ -1,4 +1,6 @@
 import styles from '../Forecast.module.css';
+import NextBtn from './NextBtn';
+import PreviousBtn from './PreviousBtn';
 
 const previousLocation = (locations: string[], activeLocation: string, onChange: (location: string) => void) => {
     const activeLocationIndex = locations.indexOf(activeLocation);
@@ -13,8 +15,6 @@ const nextLocation = (locations: string[], activeLocation: string, onChange: (lo
 };
 
 const ForecastHeader = ({ picture, firstName, time, location, locations, onChange }: { picture: string, firstName: string, time: string, location: string, locations: string[], onChange: (location: string) => void }) => {
-    const previousBtn = '/icons/overig/previous.svg';
-    const nextBtn = '/icons/overig/next.svg';
 
     const currentTime = new Date(time);
     const month = currentTime.toLocaleString('en-US', { month: 'long' });
@@ -31,9 +31,9 @@ const ForecastHeader = ({ picture, firstName, time, location, locations, onChang
             </div>
         </div>
         <div className={styles.locationSwitchContainer}>
-            <button onClick={() => previousLocation(locations, location, onChange)}><img src={previousBtn} alt='Previous button icon' /></button>
+            <PreviousBtn onClick={() => previousLocation(locations, location, onChange)} />
             <h3>{location}</h3>
-            <button onClick={() => nextLocation(locations, location, onChange)}><img src={nextBtn} alt='Next button icon' /></button>
+            <NextBtn onClick={() => nextLocation(locations, location, onChange)} />
         </div>
     </header>
   );

@@ -9,7 +9,7 @@ export const userSlice = createSlice({
     firstName: "John",
     lastName: "Smith",
     password: "John007",
-    temperature: "Celcius",
+    temperature: "°C - Celcius",
     mode: "Darkmode",
     cityOne: "Maastricht",
     cityTwo: "'s-Hertogenbosch",

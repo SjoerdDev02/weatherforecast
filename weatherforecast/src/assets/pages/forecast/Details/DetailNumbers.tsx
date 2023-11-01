@@ -59,7 +59,7 @@ const DetailComponentOne = ({
       {uvIndex && <p>The UV Index of today is {uvIndex}.</p>}
       {sunset && sunrise && (
         <p>
-          Sunrise at {sunriseTime}, sunset at {sunsetTime}.
+          Sunrise at {sunriseTime}, sunset at {sunsetTime} PM.
         </p>
       )}
     </article>

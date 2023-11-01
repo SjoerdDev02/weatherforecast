@@ -25,6 +25,8 @@
     padding: 0.5rem;
     background-color: var(--dark-blue);
     border-radius: 50%;
+    max-height: 20vh;
+    max-width: 20vh;
 }
 
 .headerNameDate {
@@ -32,18 +34,18 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: var(--white);
+    color: #FFFFFF;
 }
 
 .locationSwitchContainer {
-    background-color: var(--white);
+    background-color: var(--dark-blue);
     border-radius: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 1.5rem;
     padding: 0.5rem;
-    color: var(--dark-blue);
+    color: var(--white);
 }
 
 .locationSwitchContainer button {
@@ -71,7 +73,7 @@
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
-    color: var(--white);
+    color: #FFFFFF;
     width: 100%;
 }
 
@@ -92,7 +94,7 @@
     grid-template-columns: 1fr 1fr;
     gap: 0.5rem;
     text-align: center;
-    color: var(--white);
+    color: #FFFFFF;
     width: 100%;
 }
 
@@ -104,7 +106,7 @@
 }
 
 .todayHourContainer div {
-    background-color: var(--white);
+    background-color: #FFFFFF;
     box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.75);
     border-radius: 20px;
     display: flex;
@@ -113,6 +115,7 @@
     justify-content: center;
     gap: 0.5rem;
     padding: 0.5rem 0;
+    height: 100%;
 }
 
 .todayHourContainer img {

@@ -1,7 +1,8 @@
-import { useSelector } from "react-redux";
-import { CSSProperties, useState } from "react";
+import { CSSProperties } from "react";
 import UserLayout from "../../layouts/UserLayout/UserLayout";
 import Glass from "../../components/Glass/Glass";
+import { useSelector } from "react-redux";
+import { useState } from "react";
 import styles from "./Forecast.module.css";
 import ForecastHeader from "./Header/ForecastHeader";
 import TodayWeather from "./Today/TodayWeather";
@@ -9,11 +10,7 @@ import NextDays from "./NextDays/NextDays";
 import DetailNumbers from "./Details/DetailNumbers";
 import ForecastMap from "./Map/ForecastMap";
 import useFetchWeatherData from "../../hooks/useFetchWeatherData";
-import { UserType } from "../../types/UserType";
-
-interface RootState {
-  user: UserType;
-}
+import { RootStateType } from "../../types/RootStateType";
 
 const Forecast = () => {
   const backgroundImg = {
@@ -31,20 +28,19 @@ const Forecast = () => {
     width: "80vw",
   };
 
-  const user = useSelector((state: RootState) => state.user);
-  const { picture, firstName, temperature, mode, cityOne, cityTwo, cityThree } = user;
-  console.log(picture, firstName, temperature, mode, cityOne, cityTwo, cityThree);
+  const user = useSelector((state: RootStateType) => state.user);
+  const { picture, firstName, temperature, cityOne, cityTwo, cityThree } = user;
 
   const [location, setLocation] = useState(cityOne);
-  const weatherData = useFetchWeatherData(location);
+  const weatherData = useFetchWeatherData(location, temperature);
   const handleLocationChange = (location: string) => {
     setLocation(location);
   };
-
+  
   return (
     <UserLayout background={backgroundImg}>
       <Glass customStyles={glassStyles}>
-        {weatherData === "Loading" && <h1>Data Loading...</h1>}
+      {weatherData === "Loading" && <h1 style={{ color: 'var(--white)' }}>Dashboard Loading...</h1>}
         {weatherData !== "Loading" && (
           <div className={styles.forecastContainer}>
             <ForecastHeader
@@ -61,7 +57,7 @@ const Forecast = () => {
               location={location}
               temperature={weatherData.current.temperature_2m}
               humidity={weatherData.current.relativehumidity_2m}
-              rainProb={weatherData.hourly.precipitation_probability}
+              rainProb={weatherData.daily.precipitation_probability_max[0]}
               appTemp={weatherData.current.apparent_temperature}
               visibility={weatherData.hourly.visibility}
               hourWeather={weatherData.hourly.weathercode}
