@@ -65,7 +65,7 @@ const SwitchSetting = ({
     }));
 
     const changedUser: UserType = {
-      id: user.id,
+      memberId: user.memberId,
       picture: user.picture,
       email: user.email,
       firstName: user.firstName,
@@ -82,10 +82,10 @@ const SwitchSetting = ({
   };
 
   return (
-    <article className={styles.switchSettingContainer} onClick={switchSettings}>
+    <button className={styles.switchSettingContainer} onClick={switchSettings}>
       <img src={settingState.icon} alt="Dynamically added icon" />
       <h3>{settingState.settings}</h3>
-    </article>
+    </button>
   );
 };
 

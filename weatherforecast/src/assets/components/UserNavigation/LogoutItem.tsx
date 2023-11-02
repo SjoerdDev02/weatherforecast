@@ -7,7 +7,7 @@ const logoutIcon = <svg width="32" height="32" viewBox="0 0 32 32" fill="none" x
 
 const LogoutItem = () => {
   return (
-    <NavLink to='/' className={`${styles.navItem} ${location.pathname === '/' && styles.active}`}>{logoutIcon}</NavLink>
+    <NavLink aria-label="Logout" to='/' className={`${styles.navItem} ${location.pathname === '/' && styles.active}`}>{logoutIcon}</NavLink>
   )
 }
 

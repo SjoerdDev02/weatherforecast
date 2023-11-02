@@ -6,9 +6,9 @@ const VisitorNavigation = () => {
     const location = useLocation();
 
     return (
-            <nav className={styles.nav}>
+            <nav role="navigation" className={styles.nav}>
                 <div>
-                    <NavLink className={styles.navLogo} to='/'><h3>WeatherForecast</h3></NavLink>
+                    <NavLink aria-label="Home" className={styles.navLogo} to='/'><h3>WeatherForecast</h3></NavLink>
                 </div>
                 <div>
                     <NavLink className={`${styles.navItem} ${location.pathname === '/login' && styles.active}`} to='/login'>Login</NavLink>

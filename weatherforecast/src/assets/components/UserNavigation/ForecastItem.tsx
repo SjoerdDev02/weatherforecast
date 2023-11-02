@@ -12,7 +12,7 @@ const forecastActiveIcon = <svg width="32" height="32" viewBox="0 0 32 32" fill=
   
   const ForecastItem = ({location}: { location: Location }) => {
     return (
-      <NavLink to="/forecast" className={`${styles.navItem} ${location.pathname === '/forecast' && styles.active}`}>
+      <NavLink aria-label="Forecast" to="/forecast" className={`${styles.navItem} ${location.pathname === '/forecast' && styles.active}`}>
         {location.pathname === '/forecast' ? forecastActiveIcon : forecastIcon}
       </NavLink>
     );

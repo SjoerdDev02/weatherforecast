@@ -18,6 +18,11 @@
     color: #FFFFFF;
 }
 
+.profileHeader button {
+    background-color: transparent;
+    border: none;
+}
+
 .profileHeader img {
     padding: 0.5rem;
     background-color: var(--dark-blue);
@@ -40,6 +45,12 @@
     cursor: pointer;
 }
 
+.preferenceFormContainer header button {
+    background-color: transparent;
+    border: none;
+    color: var(--white);
+}
+
 .preferenceFormContainer form {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -50,7 +61,7 @@
     border: 1px solid var(--white);
 }
 
-.preferenceFormContainer button {
+.preferenceFormContainer form button {
     padding: 0.5rem;
     font-size: 1.5rem;
     border: none;
@@ -77,6 +88,7 @@
 }
 
 .switchSettingContainer {
+    border: none;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -96,6 +108,7 @@
 }
 
 .switchCityContainer {
+    border: none;
     display: flex;
     justify-content: center;
     align-items: center;

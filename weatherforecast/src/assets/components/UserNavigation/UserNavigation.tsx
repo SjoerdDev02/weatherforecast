@@ -6,10 +6,9 @@ import LogoutItem from './LogoutItem';
 
 const UserNavigation = () => {
     const location = useLocation();
-    console.log(location);
 
     return (
-        <nav className={styles.nav}>
+        <nav role="navigation" className={styles.nav}>
             <ForecastItem location={location} />
             <SettingsItem location={location} />
             <LogoutItem />

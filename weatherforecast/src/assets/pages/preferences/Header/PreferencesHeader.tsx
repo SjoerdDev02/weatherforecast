@@ -16,10 +16,9 @@ const PreferencesHeader = ({ user }: { user: UserType }) => {
 
   const handleFileChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const selectedFile = event.target.files && event.target.files[0];
-    console.log('Geselecteerd bestand:', selectedFile);
 
     const changedUser: UserType = {
-      id: user.id,
+      memberId: user.memberId,
       picture: selectedFile ? URL.createObjectURL(selectedFile) : user.picture,
       email: user.email,
       firstName: user.firstName,
@@ -38,7 +37,7 @@ const PreferencesHeader = ({ user }: { user: UserType }) => {
 
   return (
     <header className={styles.profileHeader}>
-      <img src={user.picture} alt='profile picture' onClick={handlePictureClick} />
+      <button onClick={handlePictureClick}><img src={user.picture} alt='profile picture' /></button>
       <input
         type="file"
         ref={fileInputRef}

@@ -69,8 +69,6 @@
 
 .todayHeader {
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
     gap: 0.5rem;
     color: #FFFFFF;
@@ -100,9 +98,8 @@
 
 .todayHourContainer {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 0.5rem;
-    width: 100%;
 }
 
 .todayHourContainer div {
@@ -115,7 +112,6 @@
     justify-content: center;
     gap: 0.5rem;
     padding: 0.5rem 0;
-    height: 100%;
 }
 
 .todayHourContainer img {
@@ -124,10 +120,9 @@
 
 .nextDaysContainer {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 0.5rem;
     color: var(--white);
-    width: 100%;
 }
 
 .nextDay {
@@ -140,7 +135,6 @@
     justify-content: center;
     gap: 0.5rem;
     padding: 0.5rem 0;
-    width: 100%;
 }
 
 .divider {
@@ -149,7 +143,7 @@
 }
 
 .nextDay img {
-    width: 50%;
+    width: 60%;
     margin: 0.5rem 0;
 }
 
@@ -180,6 +174,7 @@
     align-items: center;
     justify-content: space-between;
     gap: 0.5rem;
+    width: 100%;
 }
 
 .detailComponentOne, .detailComponentTwo {
@@ -265,7 +260,6 @@
         height: 90vh;
         display: grid;
         grid-template-columns: repeat(8, 1fr);
-        /* grid-template-rows: 20vh 30vh 30vh; */
         grid-template-areas:
             "forecastHeader forecastHeader forecastHeader forecastHeader forecastHeader forecastHeader forecastHeader forecastHeader"
             "today today today today today nextDay nextDay nextDay"
@@ -296,19 +290,30 @@
 
     .todayHeader {
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-around;
+        height: 60%;
+    }
+
+    .todayHeader img {
+        width: 20%;
     }
     
     .todayNumbers {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
+        height: 60%;
     }
 
     .todayHourContainer {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
+        height: 100%;
+    }
+
+    .todayHourContainer div {
+        height: 100%;
     }
 
     .nextDaysContainer {

@@ -34,7 +34,7 @@ const UserLayout = ({ children, background }: { children: React.ReactNode, backg
   return (
     <div className={styles.background}>
         <UserNavigation />
-        <main>{children}</main>
+        <main role="main">{children}</main>
     </div>
   );
 }

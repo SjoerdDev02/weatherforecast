@@ -38,7 +38,7 @@ const LoginForm = () => {
     <section className={styles.formContainer}>
       <h1>Login</h1>
       {error && <p>User does not exist or email and password is not a match</p>}
-      <form onSubmit={handleSubmit(onSubmit)}>
+      <form role="form" onSubmit={handleSubmit(onSubmit)}>
         {errors.email && <p>{String(errors.email.message)}</p>}
         <label htmlFor="emailLogin">Email adress</label>
         <input

@@ -28,14 +28,21 @@ const Forecast = () => {
     width: "80vw",
   };
 
+
+  const [showMap, setShowMap] = useState(false);
   const user = useSelector((state: RootStateType) => state.user);
   const { picture, firstName, temperature, cityOne, cityTwo, cityThree } = user;
 
   const [location, setLocation] = useState(cityOne);
+
   const weatherData = useFetchWeatherData(location, temperature);
   const handleLocationChange = (location: string) => {
     setLocation(location);
   };
+
+  {setTimeout(() => {
+    Object.keys(user).length > 0 && setShowMap(true);
+  }, 3000)}
   
   return (
     <UserLayout background={backgroundImg}>
@@ -77,11 +84,13 @@ const Forecast = () => {
               windDirection={weatherData.current.winddirection_10m}
               pressure={weatherData.current.surface_pressure}
             />
-            <ForecastMap
-              location={location}
-              longitude={weatherData.longitude}
-              latitude={weatherData.latitude}
-            />
+            {showMap && (
+                <ForecastMap
+                    location={location}
+                    longitude={weatherData.longitude}
+                    latitude={weatherData.latitude}
+                />
+            )}
           </div>
         )}
       </Glass>

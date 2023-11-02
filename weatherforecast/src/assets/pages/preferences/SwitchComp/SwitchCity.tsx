@@ -38,7 +38,7 @@ const SwitchCity = ({
     setCityState(CITIES_LIST[cityIndex]);
 
     const changedUser: UserType = {
-      id: user.id,
+      memberId: user.memberId,
       picture: user.picture,
       email: user.email,
       firstName: user.firstName,
@@ -55,10 +55,10 @@ const SwitchCity = ({
   };
 
   return (
-    <article className={styles.switchCityContainer} onClick={switchCity}>
+    <button className={styles.switchCityContainer} onClick={switchCity}>
       <h3>{cityState}</h3>
       <img src={"/icons/settings/city.svg"} alt="Icon of a city" />
-    </article>
+    </button>
   );
 };
 

@@ -13,19 +13,19 @@ const Introduction = () => {
             <h6 className={styles.quote}>No 1 Weather App</h6>
             <h1 className={styles.headingOne}>The only weather forecast app you will need in your life</h1>
             <h3 className={styles.subHeading}>WeatherForecast is the most accurate and flexible weather application you have ever seen.</h3>
-            <Button page='/register'>Create Account</Button>
+            <Button page='/register'>Create Free Account</Button>
         </section>
     );
 }
 
 const Preview = () => {
-    const previewImg = '/images/desktop-preview.png';
+    const previewImg = '/images/preview.png';
 
     return (
         <div className={styles.previewContainer}>
             <img className={styles.previewImg} src={previewImg} alt='Preview of the weather application' />
             <FactsContainer />
-            <Button page='/register'>Create Account</Button>
+            <Button page='/register'>Get Access</Button>
         </div>
     );
 }

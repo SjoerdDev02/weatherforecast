@@ -1,14 +1,13 @@
-import { UserType } from "../types/UserType";
 import useGetDatabase from "./useGetDatabase";
+import { DatabaseUserType } from "../types/DatabaseType";
 
 const useCheckRegister = () => {
-    const existingUsers: UserType[] = useGetDatabase();
+    const existingUsers: DatabaseUserType[] = useGetDatabase();
   
     const checkRegister = async (email: string) => {
         const validUser = existingUsers.filter((user) => {
-            return user.email === email;
+            return user.attributes.email === email;
         });
-        console.log(validUser);
     
         if (validUser.length === 0) {
             return true;

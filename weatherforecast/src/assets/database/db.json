@@ -1,17 +1,17 @@
 {
   "users": [
     {
-      "id": 1,
-      "picture": "blob:http://localhost:5173/34fe0f43-9023-4ba2-b9f3-b73cc8da07ce",
-      "email": "sjoerd.kessels2002@gmail.com",
-      "firstName": "Sjoerd",
-      "lastName": "Kessels",
-      "password": "Sjoerdjeeh",
+      "memberId": 1,
+      "email": "pep@mail.com",
+      "firstName": "Pep",
+      "lastName": "Je",
       "temperature": "°F - Fahrenheit",
       "mode": "Darkmode",
-      "cityOne": "Maastricht",
+      "cityOne": "Middelburg",
       "cityTwo": "Utrecht",
-      "cityThree": "Den Haag"
+      "cityThree": "Haarlem",
+      "password": "Sjoerdjeeh",
+      "picture": "/icons/overig/user.svg"
     }
   ]
 }

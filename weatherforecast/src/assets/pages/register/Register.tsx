@@ -53,7 +53,7 @@ const RegisterForm = () => {
     <section className={styles.formContainer}>
         <h1>Signup</h1>
         {error && <p>Registering user failed. Emailadress already exists.</p>}
-        <form onSubmit={handleSubmit(onSubmit)}>
+        <form role="form" onSubmit={handleSubmit(onSubmit)}>
             <div className={styles.formGroup}>
                 {errors.email && <p>{String(errors.email.message)}</p>}
                 <label htmlFor='emailRegister'>Email adress</label>

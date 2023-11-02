@@ -21,6 +21,7 @@
 
 .formBundle {
     display: flex;
+    flex-direction: column;
     gap: 1rem;
 }
 
@@ -51,4 +52,10 @@
 .formContainer a:hover {
     color: var(--dark-white);
     border-bottom: 1px solid var(--dark-white);
+}
+
+@media screen and (min-width: 768px) {
+    .formBundle {
+        flex-direction: row;
+    }
 }

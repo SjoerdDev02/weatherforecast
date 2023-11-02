@@ -20,7 +20,7 @@ const NameMailForm = ({ user }: { user: UserType }) => {
 
   async function onSubmit(data: FieldValues) {
     const changedUser: UserType = {
-      id: user.id,
+      memberId: user.memberId,
       picture: user.picture,
       email: data.email,
       firstName: data.firstName,
@@ -51,13 +51,13 @@ const NameMailForm = ({ user }: { user: UserType }) => {
 
   return (
     <article className={`${styles.preferenceFormContainer} nameMailContainer`}>
-      <header onClick={collapseForm}>
+      <header>
         <h3>Change email and name?</h3>
-        <i>&#9662;</i>
+        <button onClick={collapseForm}><i>&#9662;</i></button>
       </header>
       {isSucces && <p>Changes in email and name are saved successful!</p>}
       {!isCollapsed && (
-        <form onSubmit={handleSubmit(onSubmit)}>
+        <form role="form" onSubmit={handleSubmit(onSubmit)}>
           <div className={styles.inputGroup}>
             {errors.firstName && <p>{String(errors.firstName.message)}</p>}
             <label htmlFor="firstName">First name</label>

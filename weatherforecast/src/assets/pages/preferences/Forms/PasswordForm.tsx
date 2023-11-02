@@ -21,7 +21,7 @@ const PasswordForm = ({ user }: { user: UserType }) => {
 
   async function onSubmit(data: FieldValues) {
     const changedUser: UserType = {
-      id: user.id,
+      memberId: user.memberId,
       picture: user.picture,
       email: user.email,
       firstName: user.firstName,
@@ -54,11 +54,11 @@ const PasswordForm = ({ user }: { user: UserType }) => {
     <article className={`${styles.preferenceFormContainer} passwordContainer`}>
       <header onClick={collapseForm}>
         <h3>Change password?</h3>
-        <i>&#9662;</i>
+        <button><i>&#9662;</i></button>
       </header>
       {isSucces && <p>Changing password succeeded!</p>}
       {!isCollapsed && (
-        <form onSubmit={handleSubmit(onSubmit)}>
+        <form role="form" onSubmit={handleSubmit(onSubmit)}>
           <div className={styles.inputGroup}>
             {errors.oldPassword && <p>{String(errors.oldPassword.message)}</p>}
             <label htmlFor="oldPassword">Old password</label>

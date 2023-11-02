@@ -13,7 +13,7 @@ const VisitorLayout = ({ children, background }: { children: React.ReactNode, ba
 
   return (
     <div className={styles.background}>
-        <main>{children}</main>
+        <main role="main">{children}</main>
     </div>
   );
 }

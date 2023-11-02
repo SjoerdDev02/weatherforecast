@@ -1,13 +1,13 @@
 import { useEffect, useState } from 'react';
 import axios from "axios";
-import { UserType } from "../types/UserType";
 
-const useGetDatabase = (): UserType[] | [] => {
-    const [data, setData] = useState<UserType[]>([]);
+const useGetDatabase = () => {
+    const [data, setData] = useState([]);
 
     useEffect(() => {
         const fetchData = async () => {
-            const userDatabase = 'http://localhost:3000/users';
+            // const userDatabase = 'http://localhost:3000/users';
+            const userDatabase = 'http://localhost:1337/api/members';
 
             try {
                 const response = await axios.get(userDatabase);
@@ -16,7 +16,7 @@ const useGetDatabase = (): UserType[] | [] => {
                     throw new Error('Fetching van de bestaande database is mislukt. Probeer het opnieuw.');
                 }
 
-                const fetchedData: UserType[] = response.data;
+                const fetchedData = response.data.data;
                 setData(fetchedData);
             } catch (error) {
                 console.error(error);

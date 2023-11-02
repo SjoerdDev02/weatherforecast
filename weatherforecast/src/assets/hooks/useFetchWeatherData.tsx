@@ -18,12 +18,6 @@ const fetchData = async (location: string, unit: string) => {
 
     const weatherUrl = `${baseUrl}${coordinatesUrl}${dataUrlOne}${dataUrlTwo}${dataUrlThree}${dataUrlFour}`;
 
-    /* let weatherUrl = `https://api.open-meteo.com/v1/forecast?latitude=${currentCoordinates.latitude}&longitude=${currentCoordinates.longitude}&current=temperature_2m,relativehumidity_2m,apparent_temperature,precipitation,weathercode,surface_pressure,windspeed_10m,winddirection_10m&hourly=temperature_2m,weathercode,visibility&daily=weathercode,temperature_2m_max,temperature_2m_min,sunrise,sunset,uv_index_max,precipitation_probability_max&timezone=Europe%2FBerlin`; */
-
-    /* if (!tempUnit) {
-        weatherUrl = `https://api.open-meteo.com/v1/forecast?latitude=${currentCoordinates.latitude}&longitude=${currentCoordinates.longitude}&current=temperature_2m,relativehumidity_2m,apparent_temperature,precipitation,weathercode,surface_pressure,windspeed_10m,winddirection_10m&hourly=temperature_2m,weathercode,visibility&daily=weathercode,temperature_2m_max,temperature_2m_min,sunrise,sunset,uv_index_max,precipitation_probability_max&temperature_unit=fahrenheit&timezone=Europe%2FBerlin`;
-    } */
-
     try {
         const response = await axios.get(weatherUrl);
 

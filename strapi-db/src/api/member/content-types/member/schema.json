@@ -1,0 +1,49 @@
+{
+  "kind": "collectionType",
+  "collectionName": "members",
+  "info": {
+    "singularName": "member",
+    "pluralName": "members",
+    "displayName": "members",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "memberId": {
+      "type": "integer"
+    },
+    "email": {
+      "type": "email"
+    },
+    "firstName": {
+      "type": "string"
+    },
+    "lastName": {
+      "type": "string"
+    },
+    "temperature": {
+      "type": "string"
+    },
+    "mode": {
+      "type": "string"
+    },
+    "cityOne": {
+      "type": "string"
+    },
+    "cityTwo": {
+      "type": "string"
+    },
+    "cityThree": {
+      "type": "string"
+    },
+    "password": {
+      "type": "string"
+    },
+    "picture": {
+      "type": "string"
+    }
+  }
+}
