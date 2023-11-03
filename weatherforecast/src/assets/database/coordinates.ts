@@ -5,7 +5,7 @@ export const coordinates = [
         longitude: 5.690973,
     },
     {
-        name: '\'s-Hertogenbosch',
+        name: "'s-Hertogenbosch",
         latitude: 51.69917,
         longitude: 5.30417,
     },

@@ -1,8 +1,7 @@
-import { UserType } from "../../types/UserType";
 import axios from "axios";
+import { UserType } from "../../types/UserType";
 
 const changePreferences = async (changedUser: UserType) => {
-    // const databaseUrl = `http://localhost:3000/users/${changedUser.id}`;
     const databaseUrl = `http://localhost:1337/api/members/${changedUser.memberId}`
 
     try {

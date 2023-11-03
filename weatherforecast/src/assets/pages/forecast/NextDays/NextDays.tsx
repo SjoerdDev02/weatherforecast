@@ -3,9 +3,9 @@ import useSelectWeatherIcon from "../../../hooks/useSelectWeatherIcon";
 
 type NextDaysProps = {
   time: string;
-  dayWeather: number[];
-  dayMinTemp: number[];
-  dayMaxTemp: number[];
+  dayWeather: number[],
+  dayMinTemp: number[],
+  dayMaxTemp: number[],
 };
 
 const NextDay = ({
@@ -14,10 +14,10 @@ const NextDay = ({
   minTemp,
   maxTemp,
 }: {
-  day: number;
-  weather: number;
-  minTemp: number;
-  maxTemp: number;
+  day: number,
+  weather: number,
+  minTemp: number,
+  maxTemp: number,
 }) => {
   const weatherIcon = useSelectWeatherIcon(weather, false);
 
@@ -38,19 +38,19 @@ const NextDay = ({
 
   return (
     <article className={styles.nextDay}>
-      <h3>{currentDay}</h3>
-      <div className={styles.divider}></div>
-      <img
-        src={weatherIcon}
-        alt="Dynamically loaded icon that shows the weather of the day"
-      />
-      <div className={styles.thermometer}>
-        <div></div>
-        <div>
-          <p>{Math.round(minTemp)}°</p>
-          <p>{Math.round(maxTemp)}°</p>
+        <h3>{currentDay}</h3>
+        <div className={styles.divider}></div>
+        <img
+          src={weatherIcon}
+          alt="Dynamically loaded icon that shows the weather of the day"
+        />
+        <div className={styles.thermometer}>
+            <div></div>
+            <div>
+                <p>{Math.round(minTemp)}°</p>
+                <p>{Math.round(maxTemp)}°</p>
+            </div>
         </div>
-      </div>
     </article>
   );
 };
@@ -67,13 +67,13 @@ const NextDays: React.FC<NextDaysProps> = ({
   const createNextDaysElements = () => {
     for (let i = 0; i < 4; i++) {
       nextDaysElements.push(
-        <NextDay
-          key={i}
-          day={currentDayIndex + i}
-          weather={dayWeather[i]}
-          minTemp={dayMinTemp[i]}
-          maxTemp={dayMaxTemp[i]}
-        />
+          <NextDay
+              key={i}
+              day={currentDayIndex + i}
+              weather={dayWeather[i]}
+              minTemp={dayMinTemp[i]}
+              maxTemp={dayMaxTemp[i]}
+          />
       );
     }
   };
@@ -82,9 +82,9 @@ const NextDays: React.FC<NextDaysProps> = ({
 
   return (
     <section className={styles.nextDaysContainer}>
-      {nextDaysElements.map((nextDayElement) => {
-        return nextDayElement;
-      })}
+        {nextDaysElements.map((nextDayElement) => {
+          return nextDayElement;
+        })}
     </section>
   );
 };

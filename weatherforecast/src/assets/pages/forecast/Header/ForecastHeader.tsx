@@ -14,8 +14,21 @@ const nextLocation = (locations: string[], activeLocation: string, onChange: (lo
     onChange(newActiveLocation);
 };
 
-const ForecastHeader = ({ picture, firstName, time, location, locations, onChange }: { picture: string, firstName: string, time: string, location: string, locations: string[], onChange: (location: string) => void }) => {
-
+const ForecastHeader = ({
+    picture,
+    firstName,
+    time,
+    location,
+    locations,
+    onChange
+}: {
+    picture: string,
+    firstName: string,
+    time: string,
+    location: string,
+    locations: string[],
+    onChange: (location: string) => void
+}) => {
     const currentTime = new Date(time);
     const month = currentTime.toLocaleString('en-US', { month: 'long' });
     const day = currentTime.toLocaleString('en-US', { weekday: 'long' });    

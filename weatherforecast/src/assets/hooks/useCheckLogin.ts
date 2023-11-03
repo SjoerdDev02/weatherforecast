@@ -8,18 +8,18 @@ const useCheckLogin = () => {
     const existingUsers: DatabaseUserType[] = useGetDatabase();
 
     const checkLogin = async (email: string, password: string) => {
-      const validUser = existingUsers.find((user) => {
+        const validUser = existingUsers.find((user) => {
             return user.attributes.email === email && user.attributes.password === password;
         }
-      );
+    );
     
       if (validUser) {
-        const { attributes } = validUser;
-        const { memberId, email, firstName, lastName, temperature, mode, cityOne, cityTwo, cityThree, password, picture } = attributes;
-        dispatch(setUser({ memberId: memberId, email: email, firstName: firstName, lastName: lastName, temperature: temperature, mode: mode, cityOne: cityOne, cityTwo: cityTwo, cityThree: cityThree, password: password, picture: picture }));
-        return true;
+          const { attributes } = validUser;
+          const { memberId, email, firstName, lastName, temperature, mode, cityOne, cityTwo, cityThree, password, picture } = attributes;
+          dispatch(setUser({ memberId: memberId, email: email, firstName: firstName, lastName: lastName, temperature: temperature, mode: mode, cityOne: cityOne, cityTwo: cityTwo, cityThree: cityThree, password: password, picture: picture }));
+          return true;
       } else {
-        return false;
+          return false;
       }
     };
     

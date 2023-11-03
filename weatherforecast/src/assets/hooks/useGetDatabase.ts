@@ -6,7 +6,6 @@ const useGetDatabase = () => {
 
     useEffect(() => {
         const fetchData = async () => {
-            // const userDatabase = 'http://localhost:3000/users';
             const userDatabase = 'http://localhost:1337/api/members';
 
             try {

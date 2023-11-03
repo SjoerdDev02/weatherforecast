@@ -1,5 +1,5 @@
-import styles from './UserNavigation.module.css';
 import { useLocation } from 'react-router-dom';
+import styles from './UserNavigation.module.css';
 import ForecastItem from './ForecastItem';
 import SettingsItem from './SettingsItem';
 import LogoutItem from './LogoutItem';

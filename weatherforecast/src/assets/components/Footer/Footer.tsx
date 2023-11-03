@@ -1,5 +1,5 @@
-import styles from './Footer.module.css';
 import { NavLink, Link } from "react-router-dom";
+import styles from './Footer.module.css';
 
 const Footer = () => {
     const mailIcon = '/icons/socials/mail.svg';
@@ -12,10 +12,10 @@ const Footer = () => {
         <div className={styles.divider}></div>
         <NavLink to='/'><h1>WeatherForecast</h1></NavLink>
         <div className={styles.socials}>
-            <Link to='/'><img src={mailIcon} alt='Icon of email' /></Link>
-            <Link to='/'><img src={linkedInIcon} alt='Logo of LinkedIn' /></Link>
-            <Link to='/'><img src={instagramIcon} alt='Logo of Instagram' /></Link>
-            <Link to='/'><img src={githubIcon} alt='Logo of Github' /></Link>
+            <Link to='mailto:sjoerd.kessels2002@gmail.com'><img src={mailIcon} alt='Icon of email' /></Link>
+            <Link to='https://www.linkedin.com/in/sjoerd-k-380a4928a/'><img src={linkedInIcon} alt='Logo of LinkedIn' /></Link>
+            <Link to='https://www.instagram.com/sjoerd_02/'><img src={instagramIcon} alt='Logo of Instagram' /></Link>
+            <Link to='https://github.com/SjoerdDev02/'><img src={githubIcon} alt='Logo of Github' /></Link>
         </div>
     </footer>
   );

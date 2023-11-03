@@ -1,6 +1,6 @@
-import styles from './UserLayout.module.css';
 import UserNavigation from '../../components/UserNavigation/UserNavigation';
 import { useSelector } from 'react-redux';
+import styles from './UserLayout.module.css';
 import { RootStateType } from '../../types/RootStateType';
 
 type BackgroundProps = {

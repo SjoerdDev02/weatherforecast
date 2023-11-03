@@ -1,7 +1,7 @@
-import styles from '../Forecast.module.css';
 import { useEffect } from 'react';
 import "@tomtom-international/web-sdk-maps/dist/maps.css";
 import * as tt from "@tomtom-international/web-sdk-maps";
+import styles from '../Forecast.module.css';
 
 const ForecastMap = ({ location, longitude, latitude }: { location: string, longitude: number | null, latitude: number | null }) => {
     const forecastIcon = '/icons/weather/location.svg';

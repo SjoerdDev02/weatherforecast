@@ -13,7 +13,7 @@ const settingsActiveIcon = <svg width="32" height="32" viewBox="0 0 32 32" fill=
 const SettingsItem = ({location}: { location: Location }) => {
   return (
     <NavLink aria-label="Settings" to='/settings' className={`${styles.navItem} ${location.pathname === '/settings' && styles.active}`}>{location.pathname === '/settings' ? settingsActiveIcon : settingsIcon}</NavLink>
-  )
+  );
 }
 
 export default SettingsItem;

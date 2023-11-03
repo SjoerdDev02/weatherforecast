@@ -1,10 +1,10 @@
-import VisitorLayout from '../../layouts/VisitorLayout/VisitorLayout';
+import { CSSProperties } from 'react';
 import styles from './Home.module.css';
+import VisitorLayout from '../../layouts/VisitorLayout/VisitorLayout';
 import Footer from '../../components/Footer/Footer';
 import VisitorNavigation from '../../components/VisitorNavigation/VisitorNavigation';
 import Glass from '../../components/Glass/Glass';
 import FactsContainer from './FactsContainer';
-import { CSSProperties } from 'react';
 import Button from '../../components/Button/Button';
 
 const Introduction = () => {
