@@ -1,0 +1,17 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "email": "sjoerd@mail.com",
+      "firstName": "Sjoerd",
+      "lastName": "Kessels",
+      "temperature": "°F - Fahrenheit",
+      "mode": "Darkmode",
+      "cityOne": "Middelburg",
+      "cityTwo": "Utrecht",
+      "cityThree": "Haarlem",
+      "password": "FrontendSjoerd",
+      "picture": "/icons/overig/user.svg"
+    }
+  ]
+}
