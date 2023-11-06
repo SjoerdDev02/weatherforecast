@@ -1,7 +1,0 @@
-.glass {
-    background-color: var(--dark-blue-glass);
-    backdrop-filter: blur(4px);
-    -webkit-backdrop-filter: blur(4px);
-    border-radius: 20px;
-    box-shadow: 10px 5px 15px rgba(0, 0, 0, 0.4);
-}
