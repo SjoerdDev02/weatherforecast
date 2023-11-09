@@ -1,17 +1,17 @@
 {
-  "users": [
-    {
-      "id": 1,
-      "email": "mock@mail.com",
-      "firstName": "John",
-      "lastName": "Doe",
-      "temperature": "°F - Fahrenheit",
-      "mode": "Darkmode",
-      "cityOne": "Middelburg",
-      "cityTwo": "Utrecht",
-      "cityThree": "Haarlem",
-      "password": "MockPassword",
-      "picture": "/icons/overig/user.svg"
-    }
-  ]
+      "users": [
+            {
+            "id": 1,
+            "email": "mock@mail.com",
+            "firstName": "John",
+            "lastName": "Doe",
+            "temperature": "°F - Fahrenheit",
+            "mode": "Darkmode",
+            "cityOne": "Middelburg",
+            "cityTwo": "Utrecht",
+            "cityThree": "Haarlem",
+            "password": "MockPassword",
+            "picture": "/icons/overig/user.svg"
+            }
+      ]
 }
