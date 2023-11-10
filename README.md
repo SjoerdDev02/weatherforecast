@@ -9,7 +9,7 @@ This project was developed as the final project of the Bit Academy Front-end Mem
 - React-Hook-Forms
 - React-Router
 - React-Redux
-- Styled Components
+- CSS Modules
 - React Query
 
 ## Installation Instructions
