@@ -10,7 +10,7 @@ const ForecastMap = ({ location, longitude, latitude }: { location: string, long
         let map: tt.Map;
         const timeout = setTimeout(() => {
             map = tt.map({
-                key: "PROsVLZUYBXQKDBRG3ZFppoBodahuUGw",
+                key: "YOUR_KEY",
                 container: "map",
                 center: [longitude || 5, latitude || 51],
                 zoom: 8,
