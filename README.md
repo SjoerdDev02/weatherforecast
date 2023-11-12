@@ -22,6 +22,7 @@ Follow these steps to install the project locally:
 5. Open a new terminal (keep the previous one open).
 6. Navigate to the 'weatherforecast' directory.
 7. Run `json-server --watch ./src/assets/database/db.json`.
+8. Navigate in the folders to weatherforecast > src > assets > pages > forecast > Map > ForecastMap.tsx and add your TomTom key in line 13.
 
 ## Access Local Servers
 Check the terminals for the correct local server URLs, which may differ:
